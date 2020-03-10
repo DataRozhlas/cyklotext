@@ -20,7 +20,9 @@ Jenže pozitivní trend kalí tři detaily.
 
 Za prvé, průměr EU není ideální cíl. Bezpečnost dopravy je jednou ze statistik, u které Evropu dodnes rozděluje železná opona: zatímco v Německu zemřelo v roce 2016 na milion obyvatel 6,1 chodce a v nejbezpečnějším Nizozemsku 2,6 chodce, v Polsku to bylo 22,9, v Litvě 27,9 a v Rumunsku 36,3 chodce. U cyklistů je propast menší – i proto, že bicykl se tu využívá méně. Dopravní experti proto raději česká čísla místo evropského průměru srovnávají se zeměmi západní nebo severní Evropy. A k těm se Česko přibližuje jen pomalu.
 
-GRAF: ÚMRTÍ CHODCŮ/CYKLISTŮ NA MILION OBYVATEL PODLE ZEMĚ EU (DATA: https://ec.europa.eu/transport/road_safety/sites/roadsafety/files/pdf/statistics/dacota/bfs20xx_pedestrians.pdf, https://ec.europa.eu/transport/road_safety/sites/roadsafety/files/pdf/statistics/dacota/bfs20xx_cyclists.pdf)
+<wide><div style="width: 100%; height: 600px; padding-bottom: 40px" id="pesoumrti"></div></wide>
+
+<wide><div style="width: 100%; height: 600px; padding-bottom: 40px" id="cykloumrti"></div></wide>
 
 „Počet usmrcených na milion obyvatel (při všech dopravních nehodách, pozn. red.) je ve vyspělých zemích EU méně než poloviční ve srovnání s ČR,“ [upozorňuje ministerstvo dopravy](https://www.czrso.cz/nsbsp/Revize-a-aktualizace-NSBSP-2020_vc_AP_final.pdf). „Přitom pokles je v těchto zemích prakticky stálý a rovnoměrný, zatímco v zemích bývalého východního bloku se tempo poklesu od roku 2011 zpomaluje. V ČR je toto zpomalení nejzávažnější, vede k jejímu zaostávání a postupně ji posouvá mezi nejzaostalejší evropské státy.“
 
@@ -28,7 +30,13 @@ Druhá potíž je v tom, že ubývá pouze závažných nehod. Je to sice klíč
 
 K většině střetů dochází v katastru obcí: u chodců je to přes 90 procent, u cyklistů necelých 80 procent. Detailní data o dopravních nehodách od roku 2007 dodnes, která iROZHLAS.cz získal od policejního prezidia, popisují počty nehod, obětí, těžkých i lehkých zranění. Od roku 2010 data ukazují i přesnou lokaci nehody – následující graf vypovídá, ve kterých krajských městech se situace zlepšila a kde ne.
 
-GRAF: POČTY MRTVÝCH/TĚŽCE/LEHCE ZRANĚNÝCH PODLE ROKU PRO KRAJSKÁ MĚSTA
+<select id = "selectMesto">
+  <option value = "celkem" selected = "selected">Česko</option>
+  <option value = "praha">Praha</option>
+  <option value = "brno">Brno</option>
+</select>
+
+<wide><div style="width: 100%; height: 600px; padding-bottom: 40px" id="mesta"></div></wide>
 
 <small>Úmrtí eviduje Policie ČR pouze v případě, kdy k němu došlo nejpozději 24 hodin od nehody. Statistiky Centra dopravního výzkumu z let 1998 až 2010 ukazují, že skutečný počet obětí je přibližně o desetinu vyšší – jde o vážně zraněné, kteří podlehnou zraněním později.</small>
 
@@ -48,7 +56,7 @@ Národní strategie chce „dosáhnout do roku 2020 v porovnání s rokem 2009 s
 
 To se jí nedaří. Od linky, která by u fatálních nehod zaručovala dosažení vládního cíle, se realita oddělila v roce 2014 a od té doby se ji nedaří dohnat.
 
-GRAF: NÁRODNÍ STRATEGIE × PLNĚNÍ (DATABÁZE: VSECHNY)
+<div style="width: 100%; height: 500px;" id="strategie"></div>
 
 Skandidávci úspěšní jsou – přestože už na počátku tisíciletí na jejich silnicích umíralo méně lidí a dramatické snížení tedy bylo nákladnější, během několika let se země dostaly prakticky na nulu. Kde je rozdíl?
 
@@ -86,7 +94,7 @@ Brněnská data nekopírují ta celorepubliková: závažných nehod neubývá. 
 
 Svá tvrzení dokládá analýzou nehodovosti, podle které za posledních deset let [došlo na cykloobousměrkách k minimu nehod](https://brnonakole.cz/nehodova-mista-brne/).
 
-Spor o cykloobousměrky ilustruje přístup úřadů k nehodovosti, na hony vzdálený od teorie _vize nula_. Podobně se staví také k chodcům: od loňska řeší problémy s pěší zónou v historickém centru, [do které má přístup přes sedm tisíc soukromých vozidel](https://ct24.ceskatelevize.cz/regiony/jihomoravsky-kraj/2971619-centrem-brna-mohou-projizdet-tisice-aut-chodci-v-pesi-zone-mezi), [třetina řidičů sem podle strážníků vjede bez povolení](https://brno.rozhlas.cz/brno-zprisnilo-kontrolu-aut-v-pesi-zone-v-centru-mesta-bez-povoleni-tam-jezdi-8109491). XXX, link na parkování.
+Spor o cykloobousměrky ilustruje přístup úřadů k nehodovosti, na hony vzdálený od teorie _vize nula_. Podobně se staví také k chodcům: od loňska řeší problémy s pěší zónou v historickém centru, [do které má přístup přes sedm tisíc soukromých vozidel](https://ct24.ceskatelevize.cz/regiony/jihomoravsky-kraj/2971619-centrem-brna-mohou-projizdet-tisice-aut-chodci-v-pesi-zone-mezi), [třetina řidičů sem podle strážníků vjede bez povolení](https://brno.rozhlas.cz/brno-zprisnilo-kontrolu-aut-v-pesi-zone-v-centru-mesta-bez-povoleni-tam-jezdi-8109491).
 
 V hlavním městě je situace podobná.
 
@@ -100,11 +108,9 @@ Rok 2018 přitom není výjimečný, i z dlouhodobého pohledu v Praze umírají
 
 „Stěžejní z pohledu fatálních a závažných následků nehod na území hl. m. Prahy byli v uplynulých deseti letech chodci, kteří se na všech usmrcených podíleli 57 procenty a na všech těžce zraněných 50 procenty,“ říká ředitel Centra dopravního výzkumu Jindřich Frič. „Cyklisté pak dvěmi procenty na usmrcených a sedmi procenty na těžce zraněných.“
 
-XXX DOPLNIT VÍC PRAHY
-
 Obě města mají jedno společné: podíl cyklodopravy na uskutečněných cestách se v nich pohybuje kolem jednoho procenta. Bez infrastrukturních opatření se toto číslo pravděpodobně nezvýší – jednou z hlavních příčin, proč se Pražané nebo Brňané bicyklu pro všednodenní cesty vyhýbají, je strach z nehody. Běžně udávaný důvod, že za malý podíl cyklistů může především členitý terén obou měst, zpochybňuje [článek brněnského magistrátu](https://storymaps.arcgis.com/stories/fbc534a7a443491888d4476c2d4dcbf1), oceněný loni [cenou za otevřená data](https://osf.cz/programy/ziva-demokracie/nas-stat-nase-data/soutez-spolecne-otevirame-data/soutez-spolecne-otevirame-data-2019/).
 
-GRAF: PODÍL CYKLO NA OBJEMU PŘEPRAVY (DATA: https://cs.wikipedia.org/wiki/D%C4%9Blba_p%C5%99epravn%C3%AD_pr%C3%A1ce)
+<wide><div style="width: 100%; height: 600px;" id="modalsplit"></div></wide>
 
 ## Přepočteno na koruny: sražení chodci a cyklisti stáli 9 miliard
 
@@ -118,7 +124,13 @@ Například za rok 2017, kdy na silnicích zemřelo 577 lidí, tak CDV [počít�
 
 Stejnou metodou můžeme spočítat společenské náklady na nehody chodců a cyklistů. Ty tak loni dosáhly 4,4 miliard u chodců a 4,2 miliardy korun u cyklistů. Stejnou metodikou přepočítáváme vývoj v krajských městech na ekonomické ztráty.
 
-GRAF: ZTRÁTY ZA POČET MRTVÝCH/TĚŽCE/LEHCE ZRANĚNÝCH PODLE ROKU PRO KRAJSKÁ MĚSTA
+<select id = "selectLove">
+  <option value = "celkem" selected = "selected">Česko</option>
+  <option value = "praha">Praha</option>
+  <option value = "brno">Brno</option>
+</select>
+
+<wide><div style="width: 100%; height: 600px; padding-bottom: 40px" id="love"></div></wide>
 
 Chodci a cyklisté se účastní poměrně malého množství nehod: každá skupina asi čtyř procent ze všech nehod v letech 2007 až 2019. Důvod, proč jsou z pohledu dopravní bezpečnosti – a společenských nákladů – klíčové téma, je jejich podíl na těžkých nehodách: asi 38 procent těžkých nehod v dopravě se účastní chodci, 17 procent cyklisti.
 
