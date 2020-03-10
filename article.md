@@ -134,13 +134,11 @@ Stejnou metodou můžeme spočítat společenské náklady na nehody chodců a c
 
 Chodci a cyklisté se účastní poměrně malého množství nehod: každá skupina asi čtyř procent ze všech nehod v letech 2007 až 2019. Důvod, proč jsou z pohledu dopravní bezpečnosti – a společenských nákladů – klíčové téma, je jejich podíl na těžkých nehodách: asi 38 procent těžkých nehod v dopravě se účastní chodci, 17 procent cyklisti.
 
-Nebo jinak: pravděpodobnost, že srážku auta s chodcem odnese nejméně těžkým zraněním řidič, je XXX procent. Pravděpodobnost, že u takové srážky dojde k těžkému zranění nebo úmrtí chodce, je XXX procent. U srážky osobního auta s cyklistou je to XXX, resp. XXX procent.
+Nebo jinak: pravděpodobnost, že srážku auta s chodcem odnese nejméně těžkým zraněním řidič, je 0,1 procenta. Pravděpodobnost, že u takové srážky dojde k těžkému zranění nebo úmrtí chodce, je 0,4 procenta (XXX - ověřit). U srážky osobního auta s cyklistou je to 0,1, resp. 11,6 procenta.
 
-GRAF: POČET A PRAVDĚPODOBNOST TĚŽKÝCH ZRANĚNÍ PŘI SRÁŽKÁCH RŮZNÝCH DOPRAVNÍCH PROSTŘEDKŮ
+Data o nehodovosti odpovídají také na otázku, jak snižuje pravděpodobnost těžké nehody cyklistická přilba – a zda by měla být povinná pro všechny cyklisty, jak [navrhuje dopravní policie](https://www.novinky.cz/domaci/clanek/policie-chce-povinne-prilby-i-pro-dospele-cyklisty-40309609). Pravděpodobnost těžkého zranění nebo úmrtí při nehodě, kdy cyklista přilbu neměl, byla na českých silnicích 12,5 procenta. S přilbou to bylo 10 procent. Lépe dokáže závažné zranění předpovědět například věk: cyklisté do 65 let se těžce nebo smrtelně zraní při 6,2 procentech nehod, ti starší při 14,1 procentech.
 
-Data o nehodovosti odpovídají také na otázku, jak snižuje pravděpodobnost těžké nehody cyklistická přilba – a zda by měla být povinná pro všechny cyklisty, jak [navrhuje dopravní policie](https://www.novinky.cz/domaci/clanek/policie-chce-povinne-prilby-i-pro-dospele-cyklisty-40309609). Pravděpodobnost těžkého zranění nebo úmrtí při nehodě, kdy cyklista přilbu neměl, byla na českých silnicích XXX procent. S přilbou to bylo XXX procent.
-
-GRAF: PREDIKTORY TĚŽKÝCH ZRANĚNÍ (PŘILBA, VĚK, RYCHLOST AUTA, ATDATDATD.)
+<div style="width: 100%; height: 600px;" id="nasledky"></div>
 
 Zásadním faktorem pro bezpečnost chodců a cyklistů je také trestání řidičů, kteří nehodu způsobili.
 

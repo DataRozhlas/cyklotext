@@ -18,42 +18,42 @@ var rokylong = [2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017
 var rokylonglong = [2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020];
 
 var mesto_celkem = [
-  ["pocet",1000, 2000, 3000, 9528,8857,8152,7726,8433,8899,8716,9077,8967,8923],
-  ["umrti",1000, 2000, 3000, 397,360,283,304,276,282,264,259,274,211],
-  ["tezka",1000, 2000, 3000, 1503,1416,1337,1215,1225,1309,1273,1176,1134,1235],
-  ["lehka",1000, 2000, 3000, 6340,5905,5788,5385,5918,6224,6123,6456,6322,6278],
-  ["bez",1000, 2000, 3000, 1258,1141,711,779,949,1014,1009,1109,1165,1108],
-  ["umrtilove",1000, 2000, 3000, 7854.2,7122.2,5598.9,6014.3,5460.4,5579.1,5223.0,5124.1,5420.8,4174.4],
-  ["tezkalove",1000, 2000, 3000, 7661.5,7218.1,6815.4,6193.5,6244.4,6672.6,6489.1,5994.7,5780.6,6295.4],
-  ["lehkalove",1000, 2000, 3000, 4543.9,4232.1,4148.3,3859.4,4241.4,4460.7,4388.4,4627.0,4531.0,4499.4],
-  ["bezlove",1000, 2000, 3000, 486.1,440.9,274.7,301.0,366.7,391.8,389.9,428.5,450.2,428.1],
-  ["love",1000, 2000, 3000, 20545.8,19013.3,16837.2,16368.2,16312.9,17104.3,16490.3,16174.2,16182.5,15397.4]
+  ["pocet",8552,7852,7261,6745,7442,7831,7594,8007,7840,7749,7461,8012,7576],
+  ["umrti",411,380,292,317,287,292,271,271,285,223,202,195,164],
+  ["tezka",1582,1496,1404,1268,1277,1380,1331,1251,1197,1285,1073,1117,904],
+  ["lehka",6864,6356,6252,5905,6353,6667,6584,6917,6750,6682,6536,6866,6709],
+  ["bez",1306,1166,740,816,993,1062,1058,1148,1225,1161,1113,1329,1258],
+  ["umrtilove",8.1,7.5,5.8,6.3,5.7,5.8,5.4,5.4,5.6,4.4,4.0,3.9,3.2],
+  ["tezkalove",8.1,7.6,7.2,6.5,6.5,7.0,6.8,6.4,6.1,6.6,5.5,5.7,4.6],
+  ["lehkalove",4.9,4.6,4.5,4.2,4.6,4.8,4.7,5.0,4.8,4.8,4.7,4.9,4.8],
+  ["bezlove",0.5,0.5,0.3,0.3,0.4,0.4,0.4,0.4,0.5,0.4,0.4,0.5,0.5],
+  ["love",21.6,20.1,17.7,17.3,17.1,18.0,17.3,17.1,17.1,16.2,14.6,15.0,13.1]
+]
+
+var mesto_praha = [
+  ["pocet",756,818,863,889,916,906,894,887,983,828],
+  ["umrti",22,23,22,25,11,15,14,16,28,13],
+  ["tezka",191,169,178,185,152,128,143,104,132,83],
+  ["lehka",613,668,736,755,829,816,731,738,756,711],
+  ["bez",126,125,150,162,153,184,183,177,216,174],
+  ["umrtilove",0.44,0.46,0.44,0.49,0.22,0.30,0.28,0.32,0.55,0.26],
+  ["tezkalove",0.97,0.86,0.91,0.94,0.77,0.65,0.73,0.53,0.67,0.42],
+  ["lehkalove",0.44,0.48,0.53,0.54,0.59,0.58,0.52,0.53,0.54,0.51],
+  ["bezlove",0.05,0.05,0.06,0.06,0.06,0.07,0.07,0.07,0.08,0.07],
+  ["love",1.90,1.84,1.93,2.04,1.65,1.61,1.60,1.44,1.85,1.26]
 ];
 
 var mesto_brno = [
-  ["pocet",322,356,398,406,375,386,359,392,419,387],
-  ["umrti",11,6,6,12,11,4,5,3,4,7],
-  ["tezka",53,52,73,65,75,73,80,59,85,52],
-  ["lehka",230,246,280,294,259,267,250,295,286,293],
-  ["bez",28,52,39,35,30,42,23,26,40,27],
-  ["umrtilove",217.6,118.7,118.7,237.4,217.6,79.1,98.9,59.4,79.1,138.5],
-  ["tezkalove",270.2,265.1,372.1,331.3,382.3,372.1,407.8,300.8,433.3,265.1],
-  ["lehkalove",164.8,176.3,200.7,210.7,185.6,191.4,179.2,211.4,205.0,210.0],
-  ["bezlove",10.8,20.1,15.1,13.5,11.6,16.2,8.9,10.0,15.5,10.4],
-  ["love",663.5,580.2,706.6,793.0,797.2,658.8,694.8,581.6,732.9,624.0]
-];
-
-var mesto_praha = [
-  ["pocet",886,920,1022,1067,1076,1084,1054,982,1087,998],
-  ["umrti",21,23,21,25,9,14,12,16,27,13],
-  ["tezka",180,153,162,169,125,113,137,103,116,81],
-  ["lehka",544,603,662,688,746,746,672,659,678,669],
-  ["bez",115,113,140,153,149,168,172,160,207,169],
-  ["umrtilove",415.5,455.0,415.5,494.6,178.1,277.0,237.4,316.5,534.2,257.2],
-  ["tezkalove",917.6,779.9,825.8,861.5,637.2,576.0,698.4,525.0,591.3,412.9],
-  ["lehkalove",389.9,432.2,474.5,493.1,534.7,534.7,481.6,472.3,485.9,479.5],
-  ["bezlove",44.4,43.7,54.1,59.1,57.6,64.9,66.5,61.8,80.0,65.3],
-  ["love",1767.3,1710.8,1769.8,1908.3,1407.5,1452.6,1483.8,1375.7,1691.4,1214.9]
+  ["pocet",291,315,329,338,314,313,298,343,330,331],
+  ["umrti",15,6,7,12,11,4,5,3,5,7],
+  ["tezka",54,54,76,69,80,75,85,63,88,53],
+  ["lehka",251,271,294,314,279,278,266,312,296,302],
+  ["bez",29,54,39,37,30,43,24,26,40,27],
+  ["umrtilove",0.30,0.12,0.14,0.24,0.22,0.08,0.10,0.06,0.10,0.14],
+  ["tezkalove",0.28,0.28,0.39,0.35,0.41,0.38,0.43,0.32,0.45,0.27],
+  ["lehkalove",0.18,0.19,0.21,0.23,0.20,0.20,0.19,0.22,0.21,0.22],
+  ["bezlove",0.01,0.02,0.02,0.01,0.01,0.02,0.01,0.01,0.02,0.01],
+  ["love",0.76,0.61,0.75,0.83,0.84,0.68,0.73,0.61,0.78,0.64]
 ];
 
 var cykloumrti = [
@@ -158,6 +158,21 @@ var modalsplitdata = modalsplit.map(function(value) { return value.slice(1); });
 
 var mesta = ["Pardubice","Hradec Králové","České Budějovice","Olomouc","Jihlava","Karlovy Vary","Zlín","Liberec","Ostrava","Plzeň","Brno","Ústí nad Labem","Praha"];
 
+var nasledky = [
+  ["s přilbou",0.8,9.2,71.6,18.5],
+  ["bez přilby",1.8,10.7,73.5,13.9],
+  ["muž",1.8,10.2,71.3,16.6],
+  ["žena",1.1,11.7,77.7,9.6],
+  ["nad 65 let",2.3,11.8,69.4,11.1],
+  ["do 65 let",0.5,5.7,61.2,19.0]
+];
+
+var nasledkykategorie = nasledky.map(function(value, index) { return value[0]; });
+
+var nasledkydata = nasledky.map(function(value) { return value.slice(1); });
+
+var zavaznost = ["úmrtí","těžké zranění","lehké zranění","bez zranění"];
+
 document.getElementById('selectMesto').onchange =  () => drawMesto()
 
 document.getElementById('selectLove').onchange =  () => drawLove()
@@ -173,11 +188,11 @@ function drawMesto() {
 
 	var mestonau = eval('mesto_' + mesto);
 
-	var pocet = mestonau[0]; pocet.shift();
-	var umrti = mestonau[1]; umrti.shift();
-	var tezka = mestonau[2]; tezka.shift();
-	var lehka = mestonau[3]; lehka.shift();
-	var bez = mestonau[4]; bez.shift();
+	var pocet = mestonau[0]; pocet = pocet.filter(e => e !== 'pocet');
+	var umrti = mestonau[1]; umrti = umrti.filter(e => e !== 'umrti');
+	var tezka = mestonau[2]; tezka = tezka.filter(e => e !== 'tezka');
+	var lehka = mestonau[3]; lehka = lehka.filter(e => e !== 'lehka');
+	var bez = mestonau[4]; bez = bez.filter(e => e !== 'bez');
 
 	var rokynau;
 	if(mesto == 'celkem') {
@@ -245,12 +260,12 @@ Highcharts.chart('mesta', {
         name: 'Bez zranění',
         data: bez,
         color: colors[3]
-    }, {
+    }/*, {
         name: 'Počet nehod',
         data: pocet,
         color: '#333',
         type: 'line'
-    }]
+    }*/]
 });
 
 }
@@ -262,11 +277,11 @@ function drawLove() {
 
 	var mestonau = eval('mesto_' + mesto);
 
-	var love = mestonau[9]; love.shift();
-	var umrtilove = mestonau[5]; umrtilove.shift();
-	var tezkalove = mestonau[6]; tezkalove.shift();
-	var lehkalove = mestonau[7]; lehkalove.shift();
-	var bezlove = mestonau[8]; bezlove.shift();
+	var love = mestonau[9]; love = love.filter(e => e !== 'love');
+	var umrtilove = mestonau[5]; umrtilove = umrtilove.filter(e => e !== 'umrtilove');
+	var tezkalove = mestonau[6]; tezkalove = tezkalove.filter(e => e !== 'tezkalove');
+	var lehkalove = mestonau[7]; lehkalove = lehkalove.filter(e => e !== 'lehkalove');
+	var bezlove = mestonau[8]; bezlove = bezlove.filter(e => e !== 'bezlove');
 
 	var rokynau;
 	if(mesto == 'celkem') {
@@ -886,6 +901,79 @@ Highcharts.chart('modalsplit', {
         name: modalsplitprostredek[3],
         data: modalsplitdata[3],
         color: colors[3],
+        visible: false
+    }]
+});
+
+Highcharts.chart('nasledky', {
+    chart: {
+        type: 'column'
+    },
+
+    title: {
+        text: 'Závažnost nehody'
+    },
+
+    subtitle: {
+        text: 'Česko 2007 až 2019'
+    },
+
+    xAxis: {
+        categories: zavaznost
+    },
+
+    yAxis: {
+        title: {
+            text: 'podíl nehod'
+        },
+        labels: {
+        	formatter: function() {
+ 			   return this.value + '%';
+			}
+        }
+    },
+
+    tooltip: {
+        shared: true,
+        valueSuffix: ' %'
+    },
+
+    exporting: {
+        enabled: false
+    },
+
+    credits: {
+        href: '',
+        text: 'Zdroj: Policie ČR'
+    },
+
+    series: [{
+        name: nasledkykategorie[0],
+        data: nasledkydata[0],
+        color: colors[0]
+    }, {
+        name: nasledkykategorie[1],
+        data: nasledkydata[1],
+        color: colors[1]
+    }, {
+        name: nasledkykategorie[2],
+        data: nasledkydata[2],
+        color: colors[2],
+        visible: false
+    }, {
+        name: nasledkykategorie[3],
+        data: nasledkydata[3],
+        color: colors[3],
+        visible: false
+    }, {
+        name: nasledkykategorie[4],
+        data: nasledkydata[3],
+        color: colors[4],
+        visible: false
+    }, {
+        name: nasledkykategorie[5],
+        data: nasledkydata[5],
+        color: colors[5],
         visible: false
     }]
 });
